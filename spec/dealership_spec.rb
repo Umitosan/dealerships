@@ -22,13 +22,13 @@ describe(Dealership) do
      expect(test_dealership.id()).to(eq(1))
    end
  end
- #
- # describe('#cars') do
- #   it("initially returns an empty array of cars for the dealership") do
- #     test_dealership = Dealership.new("Bob's Used Cars")
- #     expect(test_dealership.cars()).to(eq([]))
- #   end
- # end
+
+ describe('#cars') do
+   it("initially returns an empty array of cars for the dealership") do
+     test_dealership = Dealership.new("Bob's Used Cars")
+     expect(test_dealership.cars()).to(eq([]))
+   end
+ end
  #
  # describe("#save") do
  #   it("adds a dealership to the array of saved dealerships") do
