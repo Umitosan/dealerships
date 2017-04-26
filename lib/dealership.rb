@@ -1,9 +1,14 @@
-# example ruby code
+class Dealership
+  @@dealerships = []
 
-# class Palindrome
+  define_method(:initialize) do |name|
+    @name = name
+    @id = @@dealerships.length().+(1)
+    @cars = []
+  end
 
-#   def is_word?(user_input)
-#     user_input.match?(/[aeiouy]+/i)
-#   end
+  define_method(:name) do
+    @name
+  end
 
-# end
+end
