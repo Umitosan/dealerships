@@ -1,5 +1,4 @@
 <h3>Here are all the cars in this dealership:</h3>
-
 <ul>
   <% @dealership.cars().each() do |car| %>
     <li><a href="/vehicles/<%= car.id() %>"><%= car.make() %> <%= car.model() %> <%= car.year() %></a></li>

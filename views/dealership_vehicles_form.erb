@@ -1,5 +1,6 @@
 <h1>Add a vehicle to <%= @dealership.name() %> </h1>
 
+
 <form action="/vehicles" method="post">
   <input id='dealership_id' name='dealership_id' type='hidden' value='<%= @dealership.id() %>'>
 
